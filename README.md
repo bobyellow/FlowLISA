@@ -1,10 +1,10 @@
 # FlowLISA
-The **univariate** local Moran's I for spatial flow data, which was proposed along with the bivariate version, namely **BiFlowLISA** (Tao and Thill, 2020). 
+**FlowLISA**, or the univariate local Moran's I for measuring spatial autocorrelation of flow data, was proposed along with the bivariate version, namely **BiFlowLISA** (Tao and Thill, 2020). It was later extended to **STFlowLISA** (Tao et al. 2023) for detecting spatiotemporal autocorrelation of flows. 
 
 Run the codes of FlowLISA:
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bobyellow/FlowLISA/blob/main/FlowLISA_main.ipynb)
 
-As detailed in Equation (3) (detailed in Tao et al. 2023), $FI_{i,j}$ is the local Moran’s I statistic, or the spatial autocorrelation measure of flow between origin $i$ and destination $j$. $f_{i,j}$ represents the value (or volume) of flow between regions $i$ and $j$. $n$ is the total number of flows in the study area. $\bar{f}$ is the average value of all flows. $w_{ij,uv}$ is the spatial flow weight between $f_{i,j}$ and $f_{u,v}$.
+As detailed in Equation (3) (Tao et al. 2023), $FI_{i,j}$ is the local Moran’s I statistic, or the spatial autocorrelation measure of flow between origin $i$ and destination $j$. $f_{i,j}$ represents the value (or volume) of flow between regions $i$ and $j$. $n$ is the total number of flows in the study area. $\bar{f}$ is the average value of all flows. $w_{ij,uv}$ is the spatial flow weight between $f_{i,j}$ and $f_{u,v}$.
 
 Equation (3):
 
