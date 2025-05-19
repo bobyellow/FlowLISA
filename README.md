@@ -8,16 +8,7 @@ As detailed in Equation (3) (detailed in Tao et al. 2023), $FI_{i,j}$ is the loc
 
 Equation (3):
 
-$$
-FI_{(i,j)}
-\=\
-\frac{
-  n\\bigl(f_{(i,j)} - \bar{f}\bigr)\
-  \displaystyle\sum_{(u,v)\neq(i,j)} w_{ij,uv}\\bigl(f_{(u,v)} - \bar{f}\bigr)
-}{
-  \displaystyle\sum_{i,j}^n \\bigl(f_{(i,j)} - \bar{f}\bigr)^2
-}
-$$
+![image](https://github.com/user-attachments/assets/c94ee5f0-263e-4ddb-b2d0-d2d0b2334dc8)
 
 The spatial weight between flows can be defined via contiguity of origin and destination, and the k nearest neighbors based on flow distance (Tao and Thill 2016). In FlowLISA codes, a creative way of calculating spatial weight is called "a move-based flow distance (MBFD)". For any two given flows, the distance can be defined as the total number of “moves” across grid cells that the origin and destination of one flow need to take to overlap with the other. The figure below shows flows having different MBFD from flow a. 
 
