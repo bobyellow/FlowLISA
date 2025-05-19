@@ -7,8 +7,16 @@ Tao and Thill (2020) extended the local Moran’s I to spatial flow data.
 As detailed in Equation (3), $FI_{i,j}$ is the local Moran’s I statistic, or the spatial autocorrelation measure of flow between origin $i$ and destination $j$; $f_{i,j}$ represents the value (or volume) of flow between regions $i$ and $j$; $n$ is the total number of flows in the study area; $f$ is the average value of all flows; $w_{ij,uv}$ is the spatial flow weight between $f_{i,j}$ and $f_{u,v}$.
 
 Equation (3):
+
 $$
-FI_{i,j} = \frac{n f_{i,j} - \sum_{u,v \neq i,j} w_{ij,uv}f_{u,v} - f}{\sum_{i,j} n (f_{i,j} - f)^2}
+FI_{(i,j)}
+\;=\;
+\frac{
+  n\,\bigl(f_{(i,j)} - \bar{f}\bigr)\,
+  \displaystyle\sum_{(u,v)\neq(i,j)} w_{ij,uv}\,\bigl(f_{(u,v)} - \bar{f}\bigr)
+}{
+  \displaystyle\sum_{i=1}^n \sum_{j=1}^n \bigl(f_{(i,j)} - \bar{f}\bigr)^2
+}
 $$
 
 Run the codes of FlowLISA:
