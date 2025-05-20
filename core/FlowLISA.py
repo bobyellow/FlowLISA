@@ -93,7 +93,7 @@ def execFLOWLISA(AREAS1, AREAS2, FlowValue, Spatstat, NeiLvl):
     significance_msg = (
         f"Global Moran's I value is: {GMoranI:.4f}. It is "
         f"{'positive' if GMoranI >= 0 else 'negative'}, "
-        f"{'significantly' if GMoranI >= GMoranI_sim[950] or GMoranI <= GMoranI_sim[49] else 'insignificantly'} at 0.01 level."
+        f"{'significantly' if GMoranI >= GMoranI_sim[950] or GMoranI <= GMoranI_sim[49] else 'insignificantly'} at 0.05 level."
     )
 
     # Construct output strings based on Spatstat type
